@@ -28,34 +28,34 @@ Paste your OpenRouter API key to the api_key attribute of MutationModelConfig cl
 
 To run the main QDBBQ method:
 ```bash
-uv run main.py run_name=<run_name>
+uv run run_elm.py run_name=<run_name>
 ```
 
 **Example:**
 ```bash
-uv run main.py run_name=logs/methods/qdbbq/
+uv run run_elm.py run_name=logs/methods/qdbbq/
 ```
 
 To run the zero-shot sampling baseline:
 ```bash
-run python main.py run_name=<run_name> qd.no_variation=True
+run python run_elm.py run_name=<run_name> qd.no_variation=True
 ```
 
 To run the current niche only baseline:
 ```bash
-uv run main.py run_name=<run_name> qd.current_niche_only=True
+uv run run_elm.py run_name=<run_name> qd.current_niche_only=True
 ```
 
 
 ### Run the bias discovery on different LLMs
 
 ```bash
-uv run main.py run_name=<run_name> target.model_path=<model_card_name>
+uv run run_elm.py run_name=<run_name> target.model_path=<model_card_name>
 ```
 
 **Example:**
 ```bash
-uv run main.py run_name=logs/llms/qwen-9b/ target.model_path=Qwen/Qwen3.5-9B
+uv run run_elm.py run_name=logs/llms/qwen-9b/ target.model_path=Qwen/Qwen3.5-9B
 ```
 
 
